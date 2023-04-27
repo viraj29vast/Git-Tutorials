@@ -1,0 +1,511 @@
+* {
+  font-family: "Work Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 7rem;
+}
+
+html::-webkit-scrollbar {
+  width: 1rem;
+}
+
+html::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: #7a7777;
+}
+
+/* CSS USED IN SECTION 1 */
+.banner-text {
+  font-family: "Work Sans", sans-serif;
+  color: #eef4f9;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  position: absolute;
+  top: 37%;
+  left: 7%;
+  text-align: left;
+  animation: animate 2s linear;
+  animation-fill-mode: backwards;
+  animation-delay: 4.5s;
+}
+.banner-heading {
+  -webkit-animation: rotate-div 1.2s infinite ease-in-out;
+  animation: rotate-div 1.2s infinite ease-in-out;
+  font-family: "Work Sans", sans-serif;
+  color: #eef4f9;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 54px;
+  position: absolute;
+  left: 7%;
+  top: 42%;
+  text-align: left;
+}
+.slider-number {
+  position: absolute;
+  bottom: 10%;
+  left: 18%;
+  text-align: left;
+  font-family: "Work Sans", sans-serif;
+  color: #eef4f9;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 17px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+}
+.slider-number .line {
+  width: 66px;
+  height: 2px;
+  border-top: 1px solid #ffff;
+  margin: 0px 10px;
+  position: relative;
+}
+
+#lineh1 {
+  position: absolute;
+  left: 0;
+  height: 10px;
+  background: #5500aa;
+  animation: lineH 4s 5s linear;
+}
+
+/* CSS USED FOR ANIMATION IN SECTION 1 */
+.banner-heading span:nth-child(1) {
+  position: relative;
+  animation: animate 2s;
+  animation-fill-mode: backwards;
+  overflow: hidden;
+}
+.banner-heading span:nth-child(2) {
+  position: relative;
+  animation: animate 2s;
+  animation-fill-mode: backwards;
+  animation-delay: 0.5s;
+}
+.banner-heading span:nth-child(3) {
+  position: relative;
+  animation: animate 2s;
+  animation-fill-mode: backwards;
+  animation-delay: 1s;
+}
+.banner-heading span:nth-child(4) {
+  position: relative;
+  animation: animate 2s;
+  animation-fill-mode: backwards;
+  animation-delay: 1.5s;
+}
+.banner-heading span:nth-child(5) {
+  position: relative;
+  animation: animate 2s;
+  animation-fill-mode: backwards;
+  animation-delay: 2s;
+}
+.banner-heading span:nth-child(6) {
+  position: relative;
+  animation: animate 2s;
+  animation-fill-mode: backwards;
+  animation-delay: 2.5s;
+}
+.banner-heading span:nth-child(7) {
+  position: relative;
+  animation: animate 2s;
+  animation-fill-mode: backwards;
+  animation-delay: 3s;
+}
+.banner-heading span:nth-child(8) {
+  position: relative;
+  animation: animate 2s;
+  animation-fill-mode: backwards;
+  animation-delay: 3.5s;
+}
+.banner-heading span:nth-child(9) {
+  position: relative;
+  animation: animate 2s linear infinite;
+  animation-fill-mode: backwards;
+  animation-delay: 4s;
+}
+.banner-heading span:nth-child(10) {
+  position: relative;
+  animation: animate 2s linear infinite;
+  animation-fill-mode: backwards;
+  animation-delay: 4.5s;
+}
+
+@keyframes animate {
+  0% {
+    transform: translateY(-200px);
+    opacity: 0;
+  }
+  50% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+  65% {
+    transform: translateY(-17px);
+    opacity: 1;
+  }
+  75% {
+    transform: translateY(-22px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+/* STYLING FOR SECTION 2 */
+
+#section-2 {
+  padding: 100px 0px;
+}
+#section-2 .heading {
+  font-family: "Work Sans", sans-serif;
+  text-align: center;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 72px;
+  text-align: center;
+  letter-spacing: -1px;
+  color: #000000;
+}
+#section-2 .sub-heading {
+  font-family: "Work Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  color: #7a7777;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.mySwiperc .swiper-wrapper .swiper-slide .text {
+  margin-top: 30px;
+}
+.mySwiperc .swiper-wrapper .swiper-slide .text h4 {
+  font-family: "Work Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 54px;
+  text-align: center;
+  letter-spacing: -1px;
+  color: #000000;
+}
+.mySwiperc .swiper-wrapper .swiper-slide .text p {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  color: #7a7777;
+  margin-top: 10px;
+}
+.mySwiperc .swiper-wrapper .swiper-slide-prev .text {
+  visibility: hidden;
+}
+.mySwiperc .swiper-wrapper .swiper-slide-next .text {
+  visibility: hidden;
+}
+.mySwiperxx {
+  height: 110% !important;
+}
+.drag-text {
+  position: absolute;
+  top: 35%;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #fff;
+  display: none;
+  font-family: "Work Sans", sans-serif;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 400;
+}
+
+.mySwiperc .swiper-wrapper .swiper-slide:hover .drag-text {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
+
+/* NAVBAR STYLING */
+
+.content {
+  max-width: 1250px;
+  margin: auto;
+  padding: 0px 30px;
+}
+.navbar {
+  position: fixed;
+  z-index: 5;
+  left: 2%;
+  right: 2%;
+  top: 4%;
+  width: 96%;
+  padding: 40px 0;
+  transition: all 0.3s ease;
+  background: #fff;
+}
+.navbar.sticky {
+  padding: 20px 0;
+  background: #fff;
+  box-shadow: 0px 3px 5px 0px rgb(0 0 0 / 10%);
+  top: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+}
+.navbar .content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar .logo a {
+  color: #fff;
+  font-size: 30px;
+  font-weight: 600;
+  text-decoration: none;
+}
+.navbar .menu-list {
+  display: inline-flex;
+}
+.menu-list li {
+  list-style: none;
+}
+.menu-list li a {
+  font-family: "Work Sans", sans-serif;
+  color: #000000;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+  margin-left: 25px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+.contact-us-btn a {
+  font-family: "Work Sans", sans-serif;
+  color: #221f20;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  padding: 10px 15px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border: 1px solid #000000;
+}
+.menu-list li a:hover {
+  color: #007bff;
+}
+
+.icon {
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  display: none;
+}
+.icon.cancel-btn {
+  position: absolute;
+  right: 30px;
+  top: 20px;
+}
+.navbar.sticky .icon.cancel-btn {
+  top: 10px;
+}
+
+/* SLIDER STYLING */
+
+.mySwiperx .swiper-slide img {
+  display: block;
+  width: 65%;
+  height: 65%;
+  object-fit: cover;
+}
+
+.swiper-button-next {
+  z-index: 1001 !important;
+  cursor: pointer !important;
+}
+
+.swiper-button-prev {
+  z-index: 1001 !important;
+  cursor: pointer !important;
+  display: none;
+}
+.mySwiperc {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 80px;
+}
+
+.mySwiperc .swiper-wrapper {
+  transform: translate3d(0px, 0px, 0px);
+}
+
+.mySwiperc .swiper-wrapper .swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.mySwiperc .swiper-wrapper .swiper-slide img {
+  display: block;
+  width: 85%;
+  height: 65%;
+}
+
+.mySwiperc .swiper-wrapper .swiper-slide .swiper-slide img {
+  display: block;
+  width: 100%;
+}
+
+.mySwiperc .swiper-wrapper .swiper-slide-next {
+  transform: translate3d(100px, 28px, 0) rotateX(0deg) rotateY(0deg) scale(1) !important;
+  z-index: 0;
+  rotate: 10deg !important;
+}
+
+.mySwiperc .swiper-wrapper .swiper-slide-prev {
+  transform: translate3d(-100px, 28px, 0) rotateX(0deg) rotateY(0deg) scale(1) !important;
+  z-index: 0;
+  rotate: -10deg !important;
+}
+
+/* STARTING OF MEDIA QUERY */
+
+@media (max-width: 991px) {
+  .slider-number {
+    position: absolute;
+    bottom: 10%;
+    left: 25%;
+  }
+}
+
+@media (max-width: 868px) {
+  .navbar {
+    position: fixed;
+    z-index: 5;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    width: 100%;
+    padding: 20px 0;
+    transition: all 0.3s ease;
+    background: #fff;
+  }
+  .cancel-btn img {
+    width: 50%;
+    margin-top: 20px;
+  }
+  body.disabledScroll {
+    overflow: hidden;
+  }
+  .icon {
+    display: block;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+    z-index: 9;
+  }
+  .menu-btn img {
+    width: 100%;
+  }
+  .icon.cancel-btn {
+    display: none;
+  }
+  .icon.cancel-btn.show {
+    display: block;
+  }
+  .icon.hide {
+    display: none;
+  }
+  .navbar .menu-list {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background: #fff;
+    display: block;
+    padding: 40px 0;
+    text-align: center;
+    clip-path: circle(25px at calc(100% - 55px) calc(0% + 50px));
+    transition: all 0.3s ease;
+  }
+  .navbar.sticky .menu-list {
+    clip-path: circle(25px at calc(100% - 55px) calc(0% + 35px));
+  }
+  .navbar .menu-list.active {
+    clip-path: circle(75%);
+  }
+  .navbar .menu-list li {
+    margin-top: 35px;
+  }
+  .navbar .menu-list li a {
+    font-size: 18px;
+    margin-left: 0px;
+  }
+}
+
+@media (max-width: 620px) {
+  .banner-text {
+    top: 37% !important;
+  }
+  .banner-heading {
+    top: 42% !important;
+  }
+  .slider-number {
+    position: absolute;
+    bottom: 10%;
+    left: 45% !important;
+  }
+  .mySwiperc .swiper-wrapper .swiper-slide .text {
+    margin-top: 30px;
+  }
+  .mySwiperc .swiper-wrapper .swiper-slide .text h4 {
+    font-size: 24px;
+    line-height: 26px;
+  }
+  .mySwiperc .swiper-wrapper .swiper-slide .text p {
+    font-size: 18px;
+    line-height: 20px;
+  }
+  .mySwiperc .swiper-wrapper .swiper-slide-next {
+    transform: translate3d(50px, 10px, 0) rotateX(0deg) rotateY(0deg) scale(1) !important;
+    rotate: 10deg !important;
+  }
+  .mySwiperc .swiper-wrapper .swiper-slide-prev {
+    transform: translate3d(-50px, 10px, 0) rotateX(0deg) rotateY(0deg) scale(1) !important;
+    rotate: -10deg !important;
+  }
+}

@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>TenTwenty</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <style>
+      /* CSS USED TO CUSTOMIZE SLIDER ONLY*/
+      html,
+      body {
+        position: relative;
+        height: 100%;
+      }
+
+      body {
+        background: #eee;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color: #000;
+        margin: 0;
+        padding: 0;
+      }
+
+      .swiper {
+        width: 100%;
+        height: 100%;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: transparent;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .autoplay-progress {
+        position: absolute;
+        left: 7%;
+        bottom: 10%;
+        z-index: 10;
+        width: 100px;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+        color: var(--swiper-theme-color);
+      }
+
+      .autoplay-progress svg {
+        --progress: 0;
+        position: absolute;
+        left: 0;
+        top: 0px;
+        z-index: 10;
+        width: 100%;
+        height: 100%;
+        stroke-width: 4px;
+        stroke: #fff;
+        fill: none;
+        stroke-dashoffset: calc(185.6 * (1 - var(--progress)));
+        stroke-dasharray: 250.6;
+        transform: rotate(0deg);
+        -webkit-box-shadow: inset 0px 0px 0px 1px #ffffff52;
+        -moz-box-shadow: inset 0px 0px 0px 1px #ffffff52;
+        box-shadow: inset 0px 0px 0px 1px #ffffff52;
+      }
+
+      .autoplay-progress span {
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        text-align: center;
+        z-index: 1000;
+        color: #fff;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 18px;
+        font-family: 'Work Sans', sans-serif;
+      }
+
+      .swiper-button-prev:after {
+        font-size: 10px;
+        color: #fff;
+        display: none;
+      }
+
+      .swiper-button-next:after {
+        font-size: 10px;
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- NAVBAR SECTION -->
+    <nav class="navbar">
+      <div class="content">
+        <ul class="menu-list">
+          <div class="icon cancel-btn">
+            <img src="./images/close.png" alt="TenTwenty Farms">
+          </div>
+          <li>
+            <a href="#">About</a>
+          </li>
+          <li>
+            <a href="#">News</a>
+          </li>
+          <li>
+            <a href="#">Services</a>
+          </li>
+          <li>
+            <a href="#">Our Team</a>
+          </li>
+          <li>
+            <a href="#">Make Enquiry</a>
+          </li>
+        </ul>
+        <div class="contact-us-btn">
+          <a href="#">Contact us <span>→</span>
+          </a>
+        </div>
+        <div class="icon menu-btn">
+          <img src="./images/menu-list.png" alt="TenTwenty Farms">
+        </div>
+      </div>
+    </nav>
+    <!-- SECTION 1-->
+    <div class="swiper mySwiper mySwiperxx">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="./images/home-img1.jpg" alt="TenTwenty Farms">
+          <p class="banner-text">
+            <span>Welcome</span>
+            <span>To</span>
+            <span>TenTwenty</span>
+            <span>Farms</span>
+          </p>
+          <h1 class="banner-heading">
+            <span>From</span>
+            <span>Our</span>
+            <span>Farms</span>
+            <br>
+            <span>To</span>
+            <span>Your</span>
+            <span>Hands</span>
+          </h1>
+          <div class="slider-number"> 01 <span class="line">
+              <div id="lineh1"></div>
+            </span>02 </div>
+        </div>
+        <div class="swiper-slide">
+          <img src="./images/home-img2.jpg" alt="TenTwenty Farms">
+          <p class="banner-text">Welcome To TenTwenty Farms</p>
+          <h1 class="banner-heading">
+            <span>From</span>
+            <span>Our</span>
+            <span>Farms</span>
+            <br>
+            <span>To</span>
+            <span>Your</span>
+            <span>Hands</span>
+          </h1>
+          <div class="slider-number"> 02 <span class="line">
+              <div id="lineh1"></div>
+            </span>02 </div>
+          <div class="autoplay-progresss ">
+            <svg viewBox="0 0 48 48">
+              <rect width="48" height="48" />
+            </svg>
+            <span></span>
+          </div>
+        </div>
+      </div>
+      <div class="autoplay-progress swiper mySwiperx">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="./images/home-img2.jpg" alt="TenTwenty Farms">
+          </div>
+          <div class="swiper-slide">
+            <img src="./images/home-img1.jpg" alt="TenTwenty Farms">
+          </div>
+          <div class="swiper-slide">
+            <img src="./images/home-img2.jpg" alt="TenTwenty Farms">
+          </div>
+          <div class="swiper-slide">
+            <img src="./images/home-img1.jpg" alt="TenTwenty Farms">
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <svg viewBox="0 0 48 48">
+          <rect width="48" height="48" />
+        </svg>
+        <span></span>
+      </div>
+    </div>
+    <!-- SECTION 2-->
+    <section id="section-2">
+      <h2 class="heading" data-aos-offset="100" data-aos-duration="1000" data-aos="zoom-in-up">Quality Products</h2>
+      <p class="sub-heading" data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="2000">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do <br> eiusmod tempor incididunt ut labore et dolore magna aliqua. <br> Ut enim ad minim veniam, quis nostrud exercitation ullamco <br> laboris nisi ut aliquip ex ea commodo consequat. </p>
+      <div class="swiper mySwiperc">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="drag-text">Drag</div>
+            <img src="./images/section-2-2.jpg" alt="TenTwenty Farms" />
+            <div class="text">
+              <h4 data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="2000" data-aos-offset="100">Client 1</h4>
+              <p data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="2000" data-aos-offset="100">Dubai, United Arab Emirates</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="drag-text">Drag</div>
+            <img data-aos="fade-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000" src="./images/section-2-3.jpg" alt="TenTwenty Farms" />
+            <div class="text">
+              <h4>Client 2</h4>
+              <p>Dubai, United Arab Emirates</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="drag-text">Drag</div>
+            <img src="./images/section-2-1.jpg" alt="TenTwenty Farms" />
+            <div class="text">
+              <h4>Client 3</h4>
+              <p>Dubai, United Arab Emirates</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="drag-text">Drag</div>
+            <img src="./images/section-2-2.jpg" alt="TenTwenty Farms" />
+            <div class="text">
+              <h4>Client 1</h4>
+              <p>Dubai, United Arab Emirates</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="drag-text">Drag</div>
+            <img src="./images/section-2-3.jpg" alt="TenTwenty Farms" />
+            <div class="text">
+              <h4>Client 2</h4>
+              <p>Dubai, United Arab Emirates</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="drag-text">Drag</div>
+            <img src="./images/section-2-1.jpg" alt="TenTwenty Farms" />
+            <div class="text">
+              <h4>Client 3</h4>
+              <p>Dubai, United Arab Emirates</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="drag-text">Drag</div>
+            <img src="./images/section-2-2.jpg" alt="TenTwenty Farms" />
+            <div class="text">
+              <h4>Client 1</h4>
+              <p>Dubai, United Arab Emirates</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="drag-text">Drag</div>
+            <img src="./images/section-2-3.jpg" alt="TenTwenty Farms" />
+            <div class="text">
+              <h4>Client 2</h4>
+              <p>Dubai, United Arab Emirates</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="drag-text">Drag</div>
+            <img data-aos="fade-right" data-aos-easing="ease-out-cubic" data-aos-duration="2000" src="./images/section-2-1.jpg" alt="TenTwenty Farms" />
+            <div class="text">
+              <h4 data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="2000">Client 3</h4>
+              <p data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="2000">Dubai, United Arab Emirates</p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+    <!-- SCRIPT FILE -->
+    <script src="./js/script.js" type="text/javascript" charset="utf-8"></script>
+    <!-- AOS ANIMATION-->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
